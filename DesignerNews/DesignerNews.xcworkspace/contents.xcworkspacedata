@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:DesignerNews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Pods">
+      <Group
+         location = "group:Pods/Headers"
+         name = "Headers">
+      </Group>
+      <Group
+         location = "group:Pods/Local Podspecs"
+         name = "Local Podspecs">
+      </Group>
+      <Group
+         location = "group:Pods/Target Support Files"
+         name = "Target Support Files">
+      </Group>
+   </Group>
+</Workspace>

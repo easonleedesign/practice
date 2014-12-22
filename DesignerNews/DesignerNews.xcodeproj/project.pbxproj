@@ -414,6 +414,7 @@
 				AC57478E1A4629CC0027C3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC57478F1A4629CC0027C3A0 /* Build configuration list for PBXNativeTarget "DesignerNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				AC5747911A4629CC0027C3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qla-Dp-FrN" customClass="CSAnimationView">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qla-Dp-FrN" customClass="CSAnimationView">
                                 <rect key="frame" x="47" y="194" width="280" height="280"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="center" minimumFontSize="17" background="input-outline" translatesAutoresizingMaskIntoConstraints="NO" id="8pr-HG-ai1">
@@ -39,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="toP-Ts-sJy">
-                                        <rect key="frame" x="27" y="115" width="25" height="18"/>
+                                        <rect key="frame" x="27" y="115" width="24" height="18"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="pVU-r8-gdV">
                                         <rect key="frame" x="27" y="166" width="25" height="25"/>
@@ -71,6 +71,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oh, no your login didn't work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-aA-eGg">
+                                        <rect key="frame" x="53" y="280" width="175" height="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -89,7 +95,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dialogView" destination="qla-Dp-FrN" id="sOY-kh-lku"/>
+                        <outlet property="emailImageView" destination="toP-Ts-sJy" id="tVK-DV-ez9"/>
+                        <outlet property="emailTextField" destination="8pr-HG-ai1" id="mnm-4T-3TI"/>
                         <outlet property="loginButton" destination="0Vr-8U-bUR" id="1GG-fs-I0Z"/>
+                        <outlet property="passwordImageView" destination="pVU-r8-gdV" id="kAZ-3F-zog"/>
+                        <outlet property="passwordTextField" destination="aKm-wB-bsg" id="Kgq-Ba-hbI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
